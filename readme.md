@@ -1,3 +1,3 @@
-#Java course. Arrays and collections.
+#Java course. Inheritance and polymorphism.
 
 Examples for this.
