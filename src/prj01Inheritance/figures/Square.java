@@ -1,5 +1,7 @@
 package prj01Inheritance.figures;
 
+import java.awt.*;
+
 public class Square extends Rectangle{
     public Square(double width, double height) {
         super(width, width);

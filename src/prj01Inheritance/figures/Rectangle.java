@@ -1,12 +1,15 @@
 package prj01Inheritance.figures;
 
-public class Rectangle {
+import java.awt.*;
+
+public class Rectangle extends Figure {
     private double width;
     private double height;
 
     public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
+        setColor(Color.blue);
     }
 
     public double getHeight() {
