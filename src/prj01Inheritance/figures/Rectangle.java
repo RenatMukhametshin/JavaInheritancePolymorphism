@@ -1,31 +1,31 @@
 package prj01Inheritance.figures;
 
 public class Rectangle {
-    public int width;
-    public int height;
+    private double width;
+    private double height;
 
-    public Rectangle(int width, int height) {
+    public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return this.height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return this.width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public int getSquare(){
+    public double getSquare(){
         return width * height;
     }
 

@@ -1,24 +1,24 @@
 package prj01Inheritance.figures;
 
 public class Square extends Rectangle{
-    public Square(int width, int height) {
+    public Square(double width, double height) {
         super(width, width);
     }
 
-    public Square(int width){
+    public Square(double width){
         super(width,width);
     }
 
     @Override
-    public void setHeight(int height) {
-        this.height = height;
-        width = height;
+    public void setHeight(double height) {
+        setHeight(height);
+        setWidth(height);
     }
 
     @Override
-    public void setWidth(int width) {
-        this.width = width;
-        height = width;
+    public void setWidth(double width) {
+        setWidth(width);
+        setHeight(width);
     }
 
     @Override
