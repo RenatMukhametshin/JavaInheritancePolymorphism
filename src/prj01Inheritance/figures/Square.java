@@ -2,13 +2,13 @@ package prj01Inheritance.figures;
 
 import java.awt.*;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle implements Comparable<Square> {
     public Square(double width, double height) {
         super(width, width);
     }
 
-    public Square(double width){
-        super(width,width);
+    public Square(double width) {
+        super(width, width);
     }
 
     @Override
@@ -29,4 +29,14 @@ public class Square extends Rectangle{
     }
 
 
+    @Override
+    public int compareTo(Square square) {
+        if (getWidth() > square.getWidth()) {
+            return -1;
+        }
+        if (getWidth() < square.getWidth()) {
+            return 1;
+        }
+        return 0;
+    }
 }
