@@ -2,7 +2,7 @@ package prj01Inheritance.figures;
 
 import java.awt.*;
 
-public class Rectangle extends Figure {
+public class Rectangle extends Figure2D {
     private double width;
     private double height;
 
@@ -35,5 +35,15 @@ public class Rectangle extends Figure {
     @Override
     public String toString() {
         return "width=" + this.width + ", height=" + this.height + ", square=" + getSquare();
+    }
+
+    @Override
+    public double getVisibleHeight() {
+        return 0;
+    }
+
+    @Override
+    public double getVisibleWidth() {
+        return 0;
     }
 }
