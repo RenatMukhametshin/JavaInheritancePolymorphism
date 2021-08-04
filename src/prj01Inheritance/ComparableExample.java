@@ -2,6 +2,7 @@ package prj01Inheritance;
 
 import prj01Inheritance.figures.Square;
 
+import java.util.ArrayList;
 import java.util.TreeSet;
 
 public class ComparableExample {
@@ -14,7 +15,7 @@ public class ComparableExample {
         System.out.println(second + " compare to " + third + " " + second.compareTo(third));
 
         System.out.println("\nSquare compare example");
-        TreeSet<Square> squares = new TreeSet<>();
+        ArrayList<Square> squares = new ArrayList<>();
         squares.add(new Square(40));
         squares.add(new Square(20));
         squares.add(new Square(40));
